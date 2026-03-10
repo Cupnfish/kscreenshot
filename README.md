@@ -8,7 +8,7 @@
 
 # kscreenshot
 
-`kscreenshot` is a Rust screenshot library for Windows. The goal of this crate is to reimplement the Kitopia C# screenshot workflow in Rust and keep the behavior as closely aligned as practical.
+`kscreenshot` is a Rust screenshot library for Windows. The goal of this crate is to reimplement the [Kitopia](https://github.com/Maklith/Kitopia.git) C# screenshot workflow in Rust and keep the behavior as closely aligned as practical.
 
 Current capabilities:
 
@@ -30,7 +30,7 @@ For a local workspace dependency:
 
 ```toml
 [dependencies]
-kscreenshot = { path = "./kscreenshot" }
+kscreenshot = "0.1"
 ```
 
 Minimal usage:
@@ -150,17 +150,7 @@ This is intentionally modeled after the Kitopia C# implementation so that HDR sc
 
 ## Inspiration
 
-This crate is not part of the official Kitopia repository. However, the API shape, WGC capture flow, window fallback matching strategy, and HDR / `SDR White Level` handling are directly inspired by the Kitopia C# screenshot implementation, and this Rust version is being built specifically to align with that behavior.
-
-## Author
-
-- cupnfish <cupnfish@icloud.com>
-
-Reference documents in this workspace:
-
-- `c#code.md`
-- `hard.md`
-- `rustcode.md`
+This crate is not part of the official Kitopia repository. However, the API shape, WGC capture flow, window fallback matching strategy, and HDR / `SDR White Level` handling are directly inspired by the [Kitopia](https://github.com/Maklith/Kitopia.git) C# screenshot implementation, and this Rust version is being built specifically to align with that behavior.
 
 ## Current Scope
 

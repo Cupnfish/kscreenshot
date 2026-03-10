@@ -8,7 +8,7 @@
 
 # kscreenshot 中文说明
 
-`kscreenshot` 是一个 Windows 下的 Rust 截图库，目标是按照 Kitopia 的 C# 截图实现思路进行 Rust 重写，并尽量保持行为一致。
+`kscreenshot` 是一个 Windows 下的 Rust 截图库，目标是按照 [Kitopia](https://github.com/Maklith/Kitopia.git) 的 C# 截图实现思路进行 Rust 重写，并尽量保持行为一致。
 
 当前能力包括：
 
@@ -30,7 +30,7 @@
 
 ```toml
 [dependencies]
-kscreenshot = { path = "./kscreenshot" }
+kscreenshot = "0.1"
 ```
 
 最小示例：
@@ -150,17 +150,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ## 与 Kitopia 的关系
 
-本项目不是 Kitopia 官方仓库的一部分，但当前 Rust 版本的 API 设计、WGC 捕获链路、窗口匹配回退策略，以及 HDR / `SDR White Level` 处理思路，代码灵感明确来源于 Kitopia 的 C# 截图实现，并且当前重写目标就是尽量与其行为对齐。
-
-## 作者
-
-- cupnfish <cupnfish@icloud.com>
-
-工作区内参考文档：
-
-- `c#code.md`
-- `hard.md`
-- `rustcode.md`
+本项目不是 Kitopia 官方仓库的一部分，但当前 Rust 版本的 API 设计、WGC 捕获链路、窗口匹配回退策略，以及 HDR / `SDR White Level` 处理思路，代码灵感明确来源于 [Kitopia](https://github.com/Maklith/Kitopia.git) 的 C# 截图实现，并且当前重写目标就是尽量与其行为对齐。
 
 ## 当前范围
 
