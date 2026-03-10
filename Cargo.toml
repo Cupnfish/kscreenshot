@@ -1,0 +1,53 @@
+[package]
+name = "kscreenshot"
+version = "0.1.0"
+edition = "2024"
+authors = ["cupnfish <cupnfish@icloud.com>"]
+readme = "README.md"
+description = "Windows screenshot library aligned with the Kitopia C# capture workflow."
+
+[dependencies]
+windows = { version = "0.62", features = [
+    # Foundation
+    "Foundation",
+    "Foundation_Numerics",
+
+    # Graphics Capture (WinRT)
+    "Graphics_Capture",
+    "Graphics_DirectX",
+    "Graphics_DirectX_Direct3D11",
+
+    # Win32 Graphics
+    "Win32_Graphics_Direct3D",
+    "Win32_Graphics_Direct3D11",
+    "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Dxgi_Common",
+    "Win32_Graphics_Gdi",
+
+    # Win32 Devices
+    "Win32_Devices_Display",
+
+    # Win32 UI
+    "Win32_UI_HiDpi",
+    "Win32_UI_Shell",
+    "Win32_UI_Shell_Common",
+    "Win32_UI_WindowsAndMessaging",
+
+    # Win32 Foundation
+    "Win32_Foundation",
+
+    # Win32 System
+    "Win32_System_Com",
+    "Win32_System_WinRT",
+    "Win32_System_WinRT_Direct3D11",
+    "Win32_System_WinRT_Graphics_Capture",
+    "Win32_System_Threading",
+]}
+
+half = "2.4"
+image = { version = "0.25", features = ["png", "jpeg"] }
+thiserror = "1.0"
+log = "0.4"
+
+[dev-dependencies]
+env_logger = "0.11"
