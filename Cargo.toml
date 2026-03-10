@@ -5,6 +5,7 @@ edition = "2024"
 authors = ["cupnfish <cupnfish@icloud.com>"]
 readme = "README.md"
 description = "Windows screenshot library aligned with the Kitopia C# capture workflow."
+license = "MIT"
 
 [dependencies]
 windows = { version = "0.62", features = [
